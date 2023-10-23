@@ -3,7 +3,7 @@ use std::error::Error as StdError;
 use std::result::Result as StdResult;
 
 fn main() -> StdResult<(), Box<dyn StdError>> {
-    let file_path = "spotify-2023.csv";
+    let file_path = "./spotify-2023.csv";
 
     let mut df = CsvReader::from_path(file_path)?
         .infer_schema(None)
