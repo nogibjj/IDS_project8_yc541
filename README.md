@@ -1,25 +1,47 @@
-[![CI](https://github.com/nogibjj/python-template/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/python-template/actions/workflows/cicd.yml)
-## Template for Python projects 
 
-1. First thing to do on launch is to open a new shell and verify virtualenv is sourced.
+# Rust vs Python: Performance & Resource Usage Comparison
 
-Things included are:
+This repository provides a comparison between a data processing script written in Python and its counterpart written in Rust. The primary focus is to highlight the improvements in speed and resource usage when using Rust.
 
-* `Makefile`
+## Overview
 
-* `Pytest`
+- **Original script:** A data processing script for Spotify data using pandas and seaborn in Python.
+- **Rust counterpart:** Utilizes `rust-csv`, `polars`, and `plotters` for similar data processing and visualization tasks.
 
-* `pandas`
+## Installation & Usage
 
-* `Pylint`
+### Python
 
-* `Dockerfile`
+**Requirements:**
+- Python 3.x
+- pandas
+- seaborn
 
-* `GitHub copilot`
+```bash
+pip install pandas seaborn
+python script_name.py
+```
 
-* `jupyter` and `ipython` 
+### Rust
 
-* A base set of libraries for devops and web
+**Requirements:**
+- Rust and Cargo
 
-* `githubactions` 
+```bash
+cargo build --release
+cargo run --release
+```
 
+## Performance & Resource Usage
+
+Both versions of the script were tested using the same dataset. A detailed performance report can be found [here](#).
+
+**Highlights:**
+- **Execution Time:** Rust version shows a X% improvement over the Python version.
+- **Memory Usage:** Rust version uses Y MB less memory on average during execution.
+
+> Note: Replace X and Y with actual performance improvement percentages and memory usage differences.
+
+## Conclusion
+
+This project demonstrates the potential benefits of using Rust for data processing tasks, especially in terms of speed and resource efficiency. While Python offers ease of use and a vast ecosystem for data science, Rust provides significant performance gains, making it an excellent choice for more resource-intensive tasks.
